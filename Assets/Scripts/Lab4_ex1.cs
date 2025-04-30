@@ -10,22 +10,22 @@ public class Lab4_ex1 : MonoBehaviour
     void Start()
     {
         //Eseguo la stampa in Console della tabellina del 3 usando 1 ciclo FOR
-        //Debug.Log("Ecco la tabellina del 3!");
-        //for (int i = 1; i<=10; i++)
-        //{
-        //    int multi = i * 3;
-        //    Debug.Log("3 x " + i + " = " + multi);
-        //}
+        Debug.Log("Ecco la tabellina del 3!");
+        for (int i = 0; i < 10; i++)
+        {
+            int n = (i + 1) * 3;
+            Debug.Log("3 x " + (i + 1) + " = " + n);
+        }
 
         //Eseguo la stampa in Console della tabellina del 3 usando 1 ciclo WHILE
-        UnityEngine.Debug.Log("Ecco la tabellina del 3!");
-        int i = 1;
-        while (i <= 10)
-        {
-            int multi = i * 3;
-            Debug.Log("3 x " + i + " = " + multi);
-            i++;
-        }
+        //UnityEngine.Debug.Log("Ecco la tabellina del 3!");
+        //int i = 0;
+        //while (i < 10)
+        //{
+        //    int n = (i + 1) * 3;
+        //    Debug.Log("3 x " + (i + 1) + " = " + n);
+        //    i++;
+        //}
     }
 
     // Update is called once per frame

@@ -19,8 +19,8 @@ public class Lab4_ex2 : MonoBehaviour
         //    Debug.Log("Ecco la tabellina del " + tabellina + "!");
         //    for (int i = 1; i <= 10; i++)
         //    {
-        //        int multi = i * tabellina;
-        //        Debug.Log(tabellina + " x " + i + " = " + multi);
+        //        int n = i * tabellina;
+        //        Debug.Log(tabellina + " x " + i + " = " + n);
         //    }
         //}
 
@@ -29,11 +29,11 @@ public class Lab4_ex2 : MonoBehaviour
         while (tabellina <= 10)
         {
             Debug.Log("Ecco la tabellina del " + tabellina + "!");
-            int i = 1;
-            while (i <= 10)
+            int i = 0;
+            while (i < 10)
             {
-                int multi = i * tabellina;
-                Debug.Log(tabellina + " x " + i + " = " + multi);
+                int n = (i + 1) * tabellina;
+                Debug.Log(tabellina + " x " + (i + 1) + " = " + n);
                 i++;
             }
             tabellina++;
