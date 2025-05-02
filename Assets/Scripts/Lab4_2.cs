@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class Lab4_2 : MonoBehaviour
 {
+    //Dichiaro 4 variabili pubbliche editabili nell'Inspector, assegnandogli dei valori
+    public int a = 1;
+    public int b = 2;
+    public int c = 3;
+    public int d = 4;
+
     // Start is called before the first frame update
     void Start()
     {
         //Creo un Array di 4 numeri interi
         int[] array = new int[4];
-        array[0] = 1;
-        array[1] = 2;
-        array[2] = 3;
-        array[3] = 4;
+        //Assegno i valori delle variabili pubbliche ai vari indici dell'array
+        array[0] = a;
+        array[1] = b;
+        array[2] = c;
+        array[3] = d;
 
         for (int i = 0; i < 2; i++)
         {
@@ -31,8 +38,8 @@ public class Lab4_2 : MonoBehaviour
             }
 
             //Stampo i risultati di Somma e Prodotto
-            Debug.Log("La Somma è " + somma);
-            Debug.Log("Il Prodotto è " + prodotto);
+            Debug.Log("La Somma dei " + array.Length + " numeri è " + somma);
+            Debug.Log("Il Prodotto dei " + array.Length + " numeri è " + prodotto);
         }
     }
 

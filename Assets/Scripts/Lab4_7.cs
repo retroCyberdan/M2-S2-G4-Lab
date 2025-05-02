@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lab4_6 : MonoBehaviour
+public class Lab4_7 : MonoBehaviour
 {
+    //in quest'ultimo esercizio, creo tre variabili intere pubbliche da sfruttare come
+    //argomenti delle funzioni, data la possibilità di editarle nell'Inspector.
+    //In questo modo sfrutto tutte le funzionalità imparate finora
+    public int dimensioneArray = 20;
+    public int rangeMin = 5;
+    public int rangeMax = 80;
+    
     // Start is called before the first frame update
     void Start()
     {
-        int[] arrayFinale = GeneraArray(20);
+        int[] arrayFinale = GeneraArray(dimensioneArray);
+        GeneraArray(arrayFinale, rangeMin, rangeMax);//come 'min' e 'max' uso le variabili pubbliche editabili dall'Inspector
         SommaArray(arrayFinale);
         StampaArray(arrayFinale);
+
     }
 
     // Update is called once per frame
@@ -25,6 +34,16 @@ public class Lab4_6 : MonoBehaviour
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = Random.Range(1, 101);
+        }
+        return array;
+    }
+
+    //Creo la funzione 'GeneraArray' modificata rispetto l'esercizio 6
+    int[] GeneraArray(int[] array, int min, int max)//posso usare lo stesso nome dato che ha argomenti diversi
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = Random.Range(min, max + 1);//min inclusivo, max esclusivo
         }
         return array;
     }
@@ -48,5 +67,4 @@ public class Lab4_6 : MonoBehaviour
             Debug.Log(array[i]);
         }
     }
-
 }

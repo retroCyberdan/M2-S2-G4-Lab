@@ -243,8 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2f5e20b6fa13d49a8227ac49ad6127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 5
-  amount: 4
+  start: 3
+  amount: 6
 --- !u!4 &99404409
 Transform:
   m_ObjectHideFlags: 0
