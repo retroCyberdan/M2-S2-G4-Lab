@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
-using Debug = UnityEngine.Debug;
 
 public class Lab4_ex1 : MonoBehaviour
 {
@@ -17,8 +15,8 @@ public class Lab4_ex1 : MonoBehaviour
             Debug.Log("3 x " + (i + 1) + " = " + n);
         }
 
-        //Eseguo la stampa in Console della tabellina del 3 usando 1 ciclo WHILE
-        //UnityEngine.Debug.Log("Ecco la tabellina del 3!");
+        ////Eseguo la stampa in Console della tabellina del 3 usando 1 ciclo WHILE
+        //Debug.Log("Ecco la tabellina del 3!");
         //int i = 0;
         //while (i < 10)
         //{

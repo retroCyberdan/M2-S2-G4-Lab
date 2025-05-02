@@ -48,7 +48,7 @@ public class Lab4_7 : MonoBehaviour
         return array;
     }
 
-    //Creo la funzione 'SommaArray()' che ha come grandezza il valore assegnato a 'dimensione'
+    //Creo la funzione 'SommaArray' che ha come grandezza il valore assegnato a 'dimensione'
     int SommaArray(int[] array)
     {
         int somma = 0;
